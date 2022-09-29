@@ -31,7 +31,7 @@ function createHtml(openingTag, value, attributes, closingTag = null) {
 		});
 	}
 	if (closingTag) {
-		element = `<${openingTag} ${attributesStr}> ${value} <${closingTag}>`;
+		element = `<${openingTag} ${attributesStr}> ${value} </${closingTag}>`;
 	}
 	else {
 		element = `<${openingTag} ${attributesStr} ${value} />`;
